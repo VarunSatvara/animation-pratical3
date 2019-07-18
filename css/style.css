@@ -1,0 +1,117 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.card-auto {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    padding: 50px 0px;
+}
+
+.card-size {
+    width: 33.33%;
+    float: left;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.cardimg {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+}
+
+.imgone {
+    background-image: url(../images/1.jpg);
+}
+
+.imgtwo {
+    background-image: url(../images/2.jpg);
+}
+
+.imgthree {
+    background-image: url(../images/3.jpg);
+}
+
+.member-name {
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 10px;
+}
+
+.member-name h6 {
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.member-name p {
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.member-name ul {
+    padding: 7px 0px;
+    margin: 0;
+}
+
+.member-name ul li {
+    display: inline-block;
+}
+
+.opacity {
+    height: 0%;
+    width: 100%;
+    display: table;
+    transform: translateY(-170px);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.card-size:hover .opacity {
+    opacity: 0.9;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    height: 300px;
+    width: 100%;
+    background-color: #e6e6e6;
+    transform: translateY(0);
+    transform-origin: top;
+}
+
+.doc {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.doc:hover {
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transform: translate(0px, 0px);
+}
