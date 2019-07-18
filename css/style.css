@@ -111,11 +111,18 @@ html {
 .list {
     opacity: 0;
     transform: translateY(0px);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .member-name:hover .list {
     opacity: 1;
     transform: translateY(-30px);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
 }
 
 .doc-name {
@@ -153,4 +160,30 @@ html {
     font-size: 14px;
     font-weight: 400;
     margin: 0;
+}
+
+.doc h4 {
+    color: #696f78;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+}
+
+.doc span {
+    color: #696f78;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.doc p {
+    color: #373a3f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding: 8px 30px;
 }
