@@ -57,25 +57,17 @@ html {
     background-color: #e6e6e6;
     margin: 0;
     padding: 10px;
-}
-
-.member-name h6 {
-    margin: 0;
-    padding: 5px 0px;
-}
-
-.member-name p {
-    margin: 0;
-    padding: 5px 0px;
+    overflow: hidden;
 }
 
 .member-name ul {
-    padding: 7px 0px;
+    padding: 0px;
     margin: 0;
 }
 
 .member-name ul li {
     display: inline-block;
+    padding: 0px 10px;
 }
 
 .opacity {
@@ -114,4 +106,51 @@ html {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     transform: translate(0px, 0px);
+}
+
+.list {
+    opacity: 0;
+    transform: translateY(0px);
+}
+
+.member-name:hover .list {
+    opacity: 1;
+    transform: translateY(-30px);
+}
+
+.doc-name {
+    transform: translateY(0px);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.member-name:hover .doc-name {
+    transform: translateY(-55px);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.doc-name h6 {
+    text-transform: capitalize;
+    color: #696f78;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 0px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.doc-name p {
+    text-transform: capitalize;
+    color: #696f78;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
 }
