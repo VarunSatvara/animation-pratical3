@@ -167,9 +167,11 @@ html {
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
-    margin: 0;
+    margin: 0px 90px 10px 90px;
+    width: 52%;
+    border: 1px solid red;
+    padding: 5px 2px;
 }
-
 .doc span {
     color: #696f78;
     font-size: 18px;
