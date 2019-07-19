@@ -39,18 +39,25 @@ html {
     width: 100%;
     background-size: cover;
     margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.imgone {
-    background-image: url(../images/1.jpg);
+.cardimg img {
+    z-index: 0;
 }
 
-.imgtwo {
-    background-image: url(../images/2.jpg);
+.card-size:hover .cardimg img {
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
-.imgthree {
-    background-image: url(../images/3.jpg);
+.card-size:hover .cardimg {
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
 }
 
 .member-name {
@@ -68,44 +75,36 @@ html {
 .member-name ul li {
     display: inline-block;
     padding: 0px 10px;
+
+}
+
+.member-name a {
+    padding: 15px;
+    font-size: 24px;
 }
 
 .opacity {
-    height: 0%;
+    height: 0px;
     width: 100%;
-    display: table;
-    transform: translateY(-170px);
+    display: grid;
     opacity: 0;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0.1s;
+    z-index: 5;
 }
 
 .card-size:hover .opacity {
     opacity: 0.9;
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    height: 300px;
+    height: 100%;
     width: 100%;
     background-color: #e6e6e6;
-    transform: translateY(0);
-    transform-origin: top;
-}
-
-.doc {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.doc:hover {
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    transform: translate(0px, 0px);
 }
 
 .list {
@@ -130,7 +129,6 @@ html {
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0s;
 }
 
 .member-name:hover .doc-name {
@@ -148,10 +146,6 @@ html {
     font-weight: 700;
     margin: 0;
     padding: 5px 0px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
 }
 
 .doc-name p {
@@ -162,9 +156,9 @@ html {
     margin: 0;
 }
 
-.doc h4 {
+.opacity h4 {
     color: #696f78;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 40px;
     margin: 0px 90px 10px 90px;
@@ -172,7 +166,8 @@ html {
     border: 1px solid red;
     padding: 5px 2px;
 }
-.doc span {
+
+.opacity span {
     color: #696f78;
     font-size: 18px;
     font-weight: 700;
@@ -181,11 +176,11 @@ html {
     padding: 8px 0px;
 }
 
-.doc p {
+.opacity p {
     color: #373a3f;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     margin: 0;
-    padding: 8px 30px;
+    padding: 3px 30px;
 }
